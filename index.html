@@ -93,6 +93,8 @@
 
     <!--style css-->
     <link rel="stylesheet" href="./asset/css/style.css" />
+    <!--animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Shine smile</title>
   </head>
@@ -175,7 +177,12 @@
           <div class="service__row">
             <!--service left-->
             <figure>
-              <img src="./asset/img/hero1.png" alt="" class="service__img" />
+              <img
+                src="./asset/img/hero1.png"
+                alt=""
+                class="service__img"
+                data-aos="flip-up"
+              />
             </figure>
             <!--service right-->
             <div class="service__list">
@@ -714,5 +721,10 @@
         </div>
       </div>
     </section>
+    <!--js animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
